@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!-- Web Application Manifest -->
     <link rel="manifest" href="manifest.json">
-
+    
     <script>
     window.addEventListener('load', function() {
       var outputElement = document.getElementById('output');
@@ -25,8 +25,8 @@
           console.error('uh oh... ');
           console.error(whut);
         });
-       
-      window.addEventListener('beforeinstallprompt', function(e) {
+      
+    window.addEventListener('beforeinstallprompt', function(e) {
         console.log('Pendiente');
         outputElement.textContent = 'beforeinstallprompt Event fired';
         
